@@ -1,0 +1,995 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dcc:digitalCalibrationCertificate xmlns:dcc="https://ptb.de/dcc" xmlns:si="https://ptb.de/si" xmlns:ds="http://www.w3.org/2000/09/xmldsig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" schemaVersion="3.3.0-rc.1" xsi:schemaLocation="https://ptb.de/dcc https://ptb.de/dcc/v3.3.0-rc.1/dcc.xsd">
+	
+	<dcc:administrativeData>
+		<dcc:dccSoftware>
+			<dcc:software>
+				<dcc:name>
+					<dcc:content>BAM - Middleware - Temperatur - DKD-R 5-1</dcc:content>
+				</dcc:name>
+				<dcc:release>4.1</dcc:release>
+			</dcc:software>
+		</dcc:dccSoftware>
+		<dcc:refTypeDefinitions>
+			<dcc:refTypeDefinition>
+				<dcc:name>
+					<dcc:content lang="de">Namensraum für Querschnitts-RefTypes</dcc:content>
+					<dcc:content lang="en">Namespace for Cross-Community RefTypes</dcc:content>
+				</dcc:name>
+				<dcc:description>
+					<dcc:content lang="de">Der Namensraum 'basic' beinhaltet allgemeine RefTypes die messgrößenübergreifend genutzt werden.</dcc:content>
+					<dcc:content lang="en">The 'basic' namespace contains RefTypes common for multiple communities.</dcc:content>
+				</dcc:description>
+				<dcc:namespace>basic</dcc:namespace>
+				<dcc:link>https://digilab.ptb.de/dkd/refType/vocab/index.php?tema=2</dcc:link>
+			</dcc:refTypeDefinition>
+			<dcc:refTypeDefinition>
+				<dcc:name>
+					<dcc:content lang="de">Namensraum für RefTypes der Temperaturmessgrößen</dcc:content>
+					<dcc:content lang="en">Namespace for RefTypes of the Temperature community</dcc:content>
+				</dcc:name>
+				<dcc:description>
+					<dcc:content lang="de">Der Namensraum 'temperature' beinhaltet spezifische RefTypes die für Temperaturmessgrößen genutzt werden.</dcc:content>
+					<dcc:content lang="en">The 'temperature' namespace contains RefTypes for temperature quantities.</dcc:content>
+				</dcc:description>
+				<dcc:namespace>temperature</dcc:namespace>
+				<dcc:link>https://digilab.ptb.de/dkd/refType/vocab/index.php?tema=117</dcc:link>
+			</dcc:refTypeDefinition>
+		</dcc:refTypeDefinitions>
+		<dcc:coreData>
+			<dcc:countryCodeISO3166_1>DE</dcc:countryCodeISO3166_1>
+			<dcc:usedLangCodeISO639_1>de</dcc:usedLangCodeISO639_1>
+			<dcc:usedLangCodeISO639_1>en</dcc:usedLangCodeISO639_1>
+			<dcc:mandatoryLangCodeISO639_1>de</dcc:mandatoryLangCodeISO639_1>
+			<dcc:uniqueIdentifier>b0239780-3043-4419-81ab-1ee9e96a880c</dcc:uniqueIdentifier>
+			
+			<dcc:identifications>
+				<dcc:identification refType="basic_certificateNumber">
+					<dcc:issuer>calibrationLaboratory</dcc:issuer>
+					<dcc:value>2207</dcc:value>
+					<dcc:name>
+						<dcc:content lang="de">Kalibriernummer</dcc:content>
+						<dcc:content lang="en">Calibration ID</dcc:content>
+					</dcc:name>
+				</dcc:identification>
+				<dcc:identification refType="basic_certificateIdentification">
+					<dcc:issuer>calibrationLaboratory</dcc:issuer>
+					<dcc:value>8.1I1540A</dcc:value>
+					<dcc:name>
+						<dcc:content lang="de">Interne Kalibrierscheinnummer</dcc:content>
+						<dcc:content lang="en">Internal certificate ID</dcc:content>
+					</dcc:name>
+				</dcc:identification>
+				<dcc:identification refType="basic_orderNumber">
+					<dcc:issuer>calibrationLaboratory</dcc:issuer>
+					<dcc:value>7509.52/0005#0030</dcc:value>
+					<dcc:name>
+						<dcc:content lang="de">e-Aktenzeichen</dcc:content>
+					</dcc:name>
+				</dcc:identification>
+			</dcc:identifications>
+			<dcc:receiptDate>2024-07-17</dcc:receiptDate>
+			
+			<dcc:beginPerformanceDate>2024-08-19</dcc:beginPerformanceDate>
+			
+			<dcc:endPerformanceDate>2024-08-23</dcc:endPerformanceDate>
+			<dcc:performanceLocation id="staticPerformanceLocation">laboratoryBranch</dcc:performanceLocation>
+			
+		</dcc:coreData>
+		<dcc:items>
+			
+			<dcc:name>
+				<dcc:content lang="de">Kalibriergegenstand</dcc:content>
+				<dcc:content lang="en">Device under test</dcc:content>
+			</dcc:name>
+			<dcc:item id="itemProbe">
+				<dcc:name>
+					<dcc:content lang="de">Fühler</dcc:content>
+					<dcc:content lang="en">Probe</dcc:content>
+				</dcc:name>
+				<dcc:description>
+					<dcc:name>
+						<dcc:content lang="de">Beschreibung des Temperaturfühlers</dcc:content>
+						<dcc:content lang="en">Description of temperature probe</dcc:content>
+					</dcc:name>
+					<dcc:content refType="temperature_probeType">Pt100</dcc:content>
+					<dcc:content lang="de">Schutzrohr: PFA-Ummantelung</dcc:content>
+					<dcc:content lang="en">tube: PFA</dcc:content>
+					<dcc:content lang="de">4-Leiter</dcc:content>
+					<dcc:content lang="en">4-wire</dcc:content>
+					<dcc:content lang="de">Stecker: Phoenix contact Push-in</dcc:content>
+					<dcc:content lang="en">connector: Phoenix contact Push-in</dcc:content>
+				</dcc:description>
+				<dcc:manufacturer>
+					<dcc:name>
+						<dcc:content>Omega Engineering</dcc:content>
+					</dcc:name>
+				</dcc:manufacturer>
+				<dcc:model>HSRTD-3-100-A-10M</dcc:model>
+				<dcc:identifications>
+					<dcc:identification refType="basic_marking">
+						<dcc:issuer>customer</dcc:issuer>
+						<dcc:value>T070</dcc:value>
+						<dcc:name>
+							<dcc:content lang="de">Identifikation des Fühlers</dcc:content>
+							<dcc:content lang="en">Probe identification</dcc:content>
+						</dcc:name>
+					</dcc:identification>
+				</dcc:identifications>
+				<dcc:itemQuantities>
+					
+					<dcc:itemQuantity>
+						<dcc:name>
+							<dcc:content lang="de">Länge des Fühlers</dcc:content>
+							<dcc:content lang="en">Length of probe</dcc:content>
+						</dcc:name>
+						<si:real>
+							<si:value>0.01</si:value>
+							
+							<si:unit>\metre</si:unit>
+						</si:real>
+					</dcc:itemQuantity>
+					<dcc:itemQuantity refType="temperature_itemProbeDiameter">
+						<dcc:name>
+							<dcc:content lang="de">Außendurchmesser des Fühlers</dcc:content>
+							<dcc:content lang="en">Outer diameter of probe</dcc:content>
+						</dcc:name>
+						<si:real>
+							<si:value>0.0021</si:value>
+							<si:unit>\metre</si:unit>
+						</si:real>
+					</dcc:itemQuantity>
+					<dcc:itemQuantity>
+						<dcc:name>
+							<dcc:content lang="de">Kabellänge</dcc:content>
+							<dcc:content lang="en">Wire length</dcc:content>
+						</dcc:name>
+						<si:real>
+							<si:value>10</si:value>
+							<si:unit>\metre</si:unit>
+						</si:real>
+					</dcc:itemQuantity>
+				</dcc:itemQuantities>
+			</dcc:item>
+		</dcc:items>
+		<dcc:calibrationLaboratory>
+			
+			<dcc:calibrationLaboratoryCode>D-K-11075-08-00</dcc:calibrationLaboratoryCode>
+			<dcc:contact>
+				<dcc:name>
+					<dcc:content>Bundesanstalt für Materialforschung und -prüfung (BAM), Fachbereich 8.1 Sensorik, mess- und prüftechnische Verfahren</dcc:content>
+				</dcc:name>
+				<dcc:eMail>michael.melzer@bam.de</dcc:eMail>
+				<dcc:phone>+49 30 8104-1919</dcc:phone>
+				<dcc:fax>+49 30 8104-1917</dcc:fax>
+				<dcc:location>
+					<dcc:city>Berlin</dcc:city>
+					<dcc:countryCode>DE</dcc:countryCode>
+					<dcc:postCode>12205</dcc:postCode>
+					<dcc:street>Unter den Eichen</dcc:street>
+					<dcc:streetNo>87</dcc:streetNo>
+					<dcc:further>
+						<dcc:content>www.bam.de</dcc:content>
+						<dcc:content>rrr.bam.de/RRR/Navigation/DE/Kalibrierlabor/kalibrierlabor.html</dcc:content>
+					</dcc:further>
+				</dcc:location>
+			</dcc:contact>
+		</dcc:calibrationLaboratory>
+		<dcc:respPersons>
+			<dcc:respPerson>
+				<dcc:person>
+					<dcc:name>
+						<dcc:content>B.Eng. M. Thomas</dcc:content>
+					</dcc:name>
+				</dcc:person>
+				<dcc:description>
+					<dcc:content lang="de">Durchgeführt von:</dcc:content>
+					<dcc:content lang="en">Conducted by:</dcc:content>
+				</dcc:description>
+				<dcc:role>Bearbeiter</dcc:role>
+			</dcc:respPerson>
+			<dcc:respPerson>
+				<dcc:person>
+					<dcc:name>
+						<dcc:content>Dr.rer.nat. M. Melzer</dcc:content>
+					</dcc:name>
+				</dcc:person>
+				<dcc:description>
+					<dcc:content lang="de">Freigabe durch:</dcc:content>
+					<dcc:content lang="en">Approval by:</dcc:content>
+				</dcc:description>
+				<dcc:role>Leiter des Kalibrierlaboratoriums</dcc:role>
+				<dcc:mainSigner>true</dcc:mainSigner>
+				
+				<dcc:cryptElectronicSeal>true</dcc:cryptElectronicSeal>
+			</dcc:respPerson>
+		</dcc:respPersons>
+		<dcc:customer>
+			
+			<dcc:name>
+				<dcc:content>BAM 3.5</dcc:content>
+				<dcc:content>E. Duffner</dcc:content>
+			</dcc:name>
+			<dcc:eMail>eric.duffner@bam.de</dcc:eMail>
+			<dcc:location>
+				<dcc:city>Berlin</dcc:city>
+				<dcc:countryCode>DE</dcc:countryCode>
+				<dcc:postCode>12205</dcc:postCode>
+				<dcc:street>Unter den Eichen</dcc:street>
+				<dcc:streetNo>87</dcc:streetNo>
+			</dcc:location>
+		</dcc:customer>
+		<dcc:statements>
+			<dcc:statement id="traceable" refType="basic_metrologicallyTraceableToSI">
+				<dcc:convention>DAkkS-ILAC</dcc:convention>
+				<dcc:traceable>true</dcc:traceable>
+				<dcc:norm>ISO/IEC 17025:2017</dcc:norm>
+				<dcc:reference>7.8.4.1c</dcc:reference>
+				<dcc:link>https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:17025:ed-3:v1:en</dcc:link>
+				<dcc:declaration>
+					<dcc:content lang="de"> Dieser Kalibrierschein dokumentiert die metrologische Rückführbarkeit 
+											auf nationale Normale zur Darstellung der Einheiten 
+											in Übereinstimmung mit dem Internationalen Einheitensystem (SI).
+											Die DAkkS ist Unterzeichner der multilateralen Übereinkommen 
+											der European co-operation for Accreditation (EA)
+											und der International Laboratory Accreditation Cooperation (ILAC) 
+											zur gegenseitigen Anerkennung der Kalibrierscheine.
+					</dcc:content>
+					<dcc:content lang="en"> This calibration certificate documents the metrological traceability 
+											to national standards, which realize the units of measurement 
+											according to the International System of Units (SI).
+											The DAkkS is signatory to the multilateral agreements 
+											of the European co-operation for Accreditation (EA) 
+											and of the International Laboratory Accreditation Cooperation (ILAC) 
+											for the mutual recognition of calibration certificates.
+					</dcc:content>
+				</dcc:declaration>
+				<dcc:valid>true</dcc:valid>
+			</dcc:statement>
+			<dcc:statement>
+				<dcc:norm>ISO/IEC 17025:2017</dcc:norm>
+				<dcc:reference>7.8.2.1l</dcc:reference>
+				<dcc:link>https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:17025:ed-3:v1:en</dcc:link>
+				<dcc:declaration>
+					<dcc:content lang="de">Die hier berichteten Ergebnisse beziehen sich nur auf die kalibrierten Gegenstände.</dcc:content>
+					<dcc:content lang="en">The presented results relate only to the items calibrated.</dcc:content>
+				</dcc:declaration>
+			</dcc:statement>
+			<dcc:statement refType="basic_recalibration">
+				<dcc:norm>ISO/IEC 17025:2017</dcc:norm>
+				<dcc:reference>7.8.4.3</dcc:reference>
+				<dcc:link>https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:17025:ed-3:v1:en</dcc:link>
+				<dcc:declaration>
+					<dcc:content lang="de">Für die Einhaltung einer angemessenen Frist zur Wiederholung der Kalibrierung ist der Benutzer verantwortlich.</dcc:content>
+					<dcc:content lang="en">The user is obliged to have the object recalibrated at appropriate intervals.</dcc:content>
+				</dcc:declaration>
+				<dcc:valid>false</dcc:valid>
+				
+			</dcc:statement>
+			<dcc:statement>
+				<dcc:norm>ISO/IEC 17025:2017</dcc:norm>
+				<dcc:reference>7.8.2.1 NOTE</dcc:reference>
+				<dcc:link>https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:17025:ed-3:v1:en</dcc:link>
+				<dcc:declaration>
+					<dcc:content lang="de"> Auszüge oder Änderungen Dieses Kalibrierscheins bedürfen der Genehmigung des ausstellenden Kalibrierlaboratoriums.</dcc:content>
+					<dcc:content lang="en"> This calibration certificate may not be reproduced other than in full 
+											except with the permission of the issuing laboratory.</dcc:content>
+					<dcc:content lang="de"> Dieser Kalibrierschein hat ohne ein digital verifiziertes Siegel keine Gültigkeit.</dcc:content>
+					<dcc:content lang="en"> This calibration certificate is not valid without a digitally verified seal.</dcc:content>
+				</dcc:declaration>
+			</dcc:statement>
+			<dcc:statement refType="basic_membership">
+				
+				<dcc:name>
+					<dcc:content lang="de">Mitgliedschaft DKD</dcc:content>
+					<dcc:content lang="en">Membership DKD</dcc:content>
+				</dcc:name>
+				<dcc:declaration>
+					<dcc:content lang="de">Mitglied im Deutschen Kalibrierdienst (DKD)</dcc:content>
+					<dcc:content lang="en">Member of the Deutscher Kalibrierdienst (DKD)</dcc:content>
+				</dcc:declaration>
+			</dcc:statement>
+			<dcc:statement refType="basic_validityRange">
+				
+				<dcc:declaration>
+					<dcc:content lang="de">Die Kalibrierung erfolgte im Temperaturbereich von:</dcc:content>
+					<dcc:content lang="en">The calibration was performed within the following temperature range:</dcc:content>
+				</dcc:declaration>
+				<dcc:data>
+					<dcc:quantity refType="basic_minimum">
+						<dcc:name>
+							<dcc:content lang="de">Unteres Limit</dcc:content>
+							<dcc:content lang="en">Lower limit</dcc:content>
+						</dcc:name>
+						<si:hybrid>
+							<si:real>
+								<si:value>223.238</si:value>
+								<si:unit>\kelvin</si:unit>
+							</si:real>
+							<si:real>
+								<si:value>-49.912</si:value>
+								<si:unit>\degreecelsius</si:unit>
+							</si:real>
+						</si:hybrid>
+					</dcc:quantity>
+					<dcc:quantity refType="basic_maximum">
+						<dcc:name>
+							<dcc:content lang="de">Oberes Limit</dcc:content>
+							<dcc:content lang="en">Upper limit</dcc:content>
+						</dcc:name>
+						<si:hybrid>
+							<si:real>
+								<si:value>373.197</si:value>
+								<si:unit>\kelvin</si:unit>
+							</si:real>
+							<si:real>
+								<si:value>100.047</si:value>
+								<si:unit>\degreecelsius</si:unit>
+							</si:real>
+						</si:hybrid>
+					</dcc:quantity>
+				</dcc:data>
+			</dcc:statement>
+			<dcc:statement refId="staticPerformanceLocation">
+				
+				<dcc:declaration>
+					<dcc:content lang="de">Die Messungen wurden in den Räumen des Kalibrierlaboratoriums durchgeführt.</dcc:content>
+					<dcc:content lang="en">The measurements were conducted within the premises of the calibration laboratory.</dcc:content>
+				</dcc:declaration>
+				<dcc:location>
+					<dcc:building>50</dcc:building>
+					<dcc:room>171</dcc:room>
+				</dcc:location>
+			</dcc:statement>
+		</dcc:statements>
+	</dcc:administrativeData>
+	<dcc:measurementResults>
+		<dcc:measurementResult>
+			<dcc:name>
+				<dcc:content lang="de">Kalibrierung eines Widerstandsthermometers</dcc:content>
+				<dcc:content lang="en">Calibration of a resistance thermometer</dcc:content>
+			</dcc:name>
+			<dcc:usedMethods>
+				
+				<dcc:usedMethod refType="basic_calibrationMethod">
+					<dcc:name>
+						<dcc:content lang="de">Kalibrierverfahren</dcc:content>
+						<dcc:content lang="en">Calibration procedure</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de">	Die Kalibrierung erfolgte im Vergleichsverfahren, gemäß der unten aufgeführten Verfahrensbeschreibung.</dcc:content>
+						<dcc:content lang="en"> According to the method description referenced below, the object was calibrated comparing the indicated values 
+												of the calibration object and the values from the reference thermometer.</dcc:content>
+					</dcc:description>
+					<dcc:norm>DKD-R 5-1:2023-11</dcc:norm>
+					
+				</dcc:usedMethod>
+				<dcc:usedMethod refType="temperature_conversionProcedure">
+					<dcc:name>
+						<dcc:content lang="de">Umrechnungsvorschrift</dcc:content>
+						<dcc:content lang="en">Conversion procedure</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de">	Aus den gemessenen Widerstandswerten wurden die entsprechenden Temperaturwerte
+												gemäß der untenstehnden Vorschrift ermittelt und den Temperatur-Referenzwerten gegenübergestellt.</dcc:content>
+						<dcc:content lang="en"> Temperatur values assigned to the measured resistance values  
+												according to the rule given below are represented and compared to the reference values.</dcc:content>
+					</dcc:description>
+					<dcc:norm>EN IEC 60751:2022</dcc:norm>
+					<dcc:reference>4.2</dcc:reference>
+					
+				</dcc:usedMethod>
+				<dcc:usedMethod id="inputValue">
+					<dcc:name>
+						<dcc:content lang="de">Bestimmung des Eingangswertes</dcc:content>
+						<dcc:content lang="en">Determination of the inputValue</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de">	Als Eingangswert wurde der Fühlerwiderstand am Eispunkt gemessen.</dcc:content>
+						<dcc:content lang="en"> As the input value, the resistance of the probe was measured at the ice point.</dcc:content>
+					</dcc:description>
+					<dcc:norm>DKD-R 5-1:2023-11</dcc:norm>
+					<dcc:reference>6</dcc:reference>
+					
+				</dcc:usedMethod>
+				<dcc:usedMethod id="selfHeating">
+					
+					<dcc:name>
+						<dcc:content lang="de">Bestimmung der Eigenerwärmung</dcc:content>
+						<dcc:content lang="en">Determination of self-heating</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de">	Der Einfluss der Eigenerwärmung für den Temperaturfühler wurde nicht untersucht.
+												Er kann einen zusätzlichen Messunsicherheitsbeitrag von bis zu 30 mK (k=2) liefern.
+												Dieser Beitrag ist in der angegebenen erweiterten Messunsicherheit enthalten.</dcc:content>
+						<dcc:content lang="en"> The influence of self-heating for the thermal sensor was not investigated.
+												It can provide an additional measurement uncertainty contribution of up to 30 mK (k=2).
+												This contribution is included in the expanded measurement uncertainty.</dcc:content>
+					</dcc:description>
+					<dcc:norm>DKD-R 5-1:2023-11</dcc:norm>
+					<dcc:reference>8.8</dcc:reference>
+					
+				</dcc:usedMethod>
+				<dcc:usedMethod id="measuringCurrent">
+					
+					<dcc:name>
+						<dcc:content lang="de">Verwendeter Messstrom</dcc:content>
+						<dcc:content lang="en">Measuring current used</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de">Der Messstrom bei der Widerstandsmessung (Ieff) betrug 0.7 mA (1 mA mit Tastgrad 0.5).</dcc:content>
+						<dcc:content lang="en">The current (RMS) during the resistance measurement was 0.7 mA.</dcc:content>
+					</dcc:description>
+					<dcc:norm>DKD-R 5-1:2023-11</dcc:norm>
+					<dcc:reference>8.4</dcc:reference>
+					
+				</dcc:usedMethod>
+				<dcc:usedMethod id="hysteresis">
+					
+					<dcc:name>
+						<dcc:content lang="de">Bestimmung der Hysterese</dcc:content>
+						<dcc:content lang="en">Hysteresis determination</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de">	Der Einfluss der Hysterese wurde experimentell nicht ermittelt.
+												Es ist davon auszugehen, dass dieser im Temperaturbereich der Kalibrierung bis zu 0.30 K betragen kann,	
+												sofern die Messungen nicht durchgehend in der angegebenen Temperaturmesspunkt-Reihenfolge durchgeführt werden.
+												Dabei ist der größte Einfluss in der Mitte des Temperaturbereichs zu erwarten.
+												Die Hysterese ist in der ausgewiesenen Messunsicherheit nicht berücksichtigt.</dcc:content>
+						<dcc:content lang="en"> The influence of the hysteresis was not determined experimentally, it is expected to have an additional contribution 
+												of up to 0.30 K to the measurement uncertainty, for the temperature range of this calibration, 
+												in case the measurements are not performed in the same order of temperature setpoints. 
+												The lagest contribution is expected to be in the center of the temperature range.
+												The hysteresis is not considered in the measurement uncertainty stated.</dcc:content>
+					</dcc:description>
+					<dcc:norm>DKD-R 5-1:2023-11</dcc:norm>
+					<dcc:reference>8.10</dcc:reference>
+					
+				</dcc:usedMethod>
+				<dcc:usedMethod refType="temperature_thermostatUsed">
+					<dcc:name>
+						<dcc:content>Thermostat</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de">Die Kalibrierung wurde in einem gerührten Flüssigkeitsthermostat in einer Tauchhülse durchgeführt.</dcc:content>
+						<dcc:content lang="en">The calibration was carried out in a stirred liquid bath using an immersion sleeve.</dcc:content>
+					</dcc:description>
+					<dcc:norm>DKD-R 5-1:2023-11</dcc:norm>
+					<dcc:reference>7</dcc:reference>
+					
+				</dcc:usedMethod>
+				<dcc:usedMethod id="totalSampleTime">
+					<dcc:name>
+						<dcc:content lang="de">Gesamtaufnahmezeit pro Temperatur</dcc:content>
+						<dcc:content lang="en">Total recording time per temperature</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de">	Die Messungen erfolgten, nach Temperaturstabilisierung am jeweiligen Kalibrierpunkt, über einen Zeitraum von 5 Minuten.</dcc:content>
+						
+						<dcc:content lang="en"> The measurements were made after temperature stabilization at the respective calibration point, over a period of 5 minutes.</dcc:content>
+					</dcc:description>
+				</dcc:usedMethod>
+				<dcc:usedMethod id="numberOfSamples">
+					<dcc:name>
+						<dcc:content lang="de">Anzahl der Einzelmessungen des Kalibriergegenstandes pro Temperatur</dcc:content>
+						<dcc:content lang="en">Number of individual measurements of the DUT for each temperature</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de">	Die angegebenen Messwerte stellen jeweils einen Mittelwert aus 50 Einzelmessungen dar.</dcc:content>
+						
+						<dcc:content lang="en"> The stated Temperature values represent a mean from 50 single measurements.</dcc:content>
+						
+					</dcc:description>
+				</dcc:usedMethod>
+				<dcc:usedMethod refType="basic_methodMeasurementUncertainty">
+					<dcc:name>
+						<dcc:content lang="de">Messunsicherheit</dcc:content>
+						<dcc:content lang="en">Measurement uncertainty</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de"> Angegeben ist die erweiterte Messunsicherheit, die sich aus der Standardmessunsicherheit 
+												durch Multiplikation mit dem Erweiterungsfaktor k=2 ergibt. Sie wurde gemäß der unten aufgeführten Vorschrift ermittelt. 
+												Der Wert der Messgröße liegt mit einer Wahrscheinlichkeit von 95 % im zugeordneten Werteintervall.</dcc:content>
+						<dcc:content lang="en"> The reported expanded uncertainty is stated as the standard uncertainty multiplied by a coverage factor k=2. 
+												The coverage factor k=2 for a normal distribution corresponds to a coverage probability of approx. 95 %.</dcc:content>
+					</dcc:description>
+					<dcc:norm>EA-4/02 M:2022</dcc:norm>
+					
+				</dcc:usedMethod>
+			</dcc:usedMethods>
+			<dcc:usedSoftware>
+				<dcc:software>
+					<dcc:name>
+						<dcc:content>HP3458A-neu_RefAuswahl.vi</dcc:content>
+					</dcc:name>
+					<dcc:release>2020-08-25</dcc:release>
+				</dcc:software>
+			</dcc:usedSoftware>
+			<dcc:measuringEquipments>
+				<dcc:measuringEquipment refType="basic_measurementStandardUsed">
+					<dcc:name>
+						<dcc:content lang="de">Pt100 Normal</dcc:content>
+						<dcc:content lang="en">Pt100 standard</dcc:content>
+					</dcc:name>
+					<dcc:manufacturer>
+						<dcc:name>
+							<dcc:content>Isotech</dcc:content>
+						</dcc:name>
+					</dcc:manufacturer>
+					<dcc:model>935-14-61</dcc:model>
+					<dcc:identifications>
+						<dcc:identification refType="basic_serialNumber">
+							<dcc:issuer>manufacturer</dcc:issuer>
+							<dcc:value>18094/1</dcc:value>
+							<dcc:name>
+								<dcc:content lang="de">Serien Nr.</dcc:content>
+								<dcc:content lang="en">Serial no.</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+					</dcc:identifications>
+				</dcc:measuringEquipment>
+				<dcc:measuringEquipment refType="basic_measurementStandardUsed">
+					<dcc:name>
+						<dcc:content lang="de">Digitalmultimeter</dcc:content>
+						<dcc:content lang="en">Digital multimeter</dcc:content>
+					</dcc:name>
+					<dcc:manufacturer>
+						<dcc:name>
+							<dcc:content>HP</dcc:content>
+						</dcc:name>
+					</dcc:manufacturer>
+					<dcc:model>3458A</dcc:model>
+					<dcc:identifications>
+						<dcc:identification refType="basic_serialNumber">
+							<dcc:issuer>manufacturer</dcc:issuer>
+							<dcc:value>2823A11406</dcc:value>
+							<dcc:name>
+								<dcc:content lang="de">Serien Nr.</dcc:content>
+								<dcc:content lang="en">Serial no.</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+					</dcc:identifications>
+				</dcc:measuringEquipment>
+				<dcc:measuringEquipment refType="temperature_acquisitionUnitForItem">
+					<dcc:name>
+						<dcc:content lang="de">Digitalmultimeter</dcc:content>
+						<dcc:content lang="en">Digital multimeter</dcc:content>
+					</dcc:name>
+					<dcc:manufacturer>
+						<dcc:name>
+							<dcc:content>HP</dcc:content>
+						</dcc:name>
+					</dcc:manufacturer>
+					<dcc:model>3458A</dcc:model>
+					<dcc:identifications>
+						<dcc:identification refType="basic_serialNumber">
+							<dcc:issuer>manufacturer</dcc:issuer>
+							<dcc:value>2823A14074</dcc:value>
+							<dcc:name>
+								<dcc:content lang="de">Serien Nr.</dcc:content>
+								<dcc:content lang="en">Serial no.</dcc:content>
+							</dcc:name>
+						</dcc:identification>
+					</dcc:identifications>
+				</dcc:measuringEquipment>
+			</dcc:measuringEquipments>
+			<dcc:influenceConditions>
+				
+				<dcc:influenceCondition refType="temperature_immersionDepth">
+					
+					<dcc:name>
+						<dcc:content lang="de">Eintauchtiefe im Themostaten</dcc:content>
+						<dcc:content lang="en">Immersion depth in the thermostat</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:quantity>
+							<dcc:name>
+								<dcc:content lang="de">Die Eintauchtiefe des Fühlers im Thermostaten während der Kalibrierung betrug ca.:</dcc:content>
+								<dcc:content lang="en">The Immersion depth of the probe into the calibrator was about:</dcc:content>
+							</dcc:name>
+							<si:real>
+								<si:value>0.3</si:value>
+								<si:unit>\metre</si:unit>
+							</si:real>
+						</dcc:quantity>
+					</dcc:data>
+				</dcc:influenceCondition>
+				<dcc:influenceCondition refType="basic_temperature">
+					<dcc:name>
+						<dcc:content lang="de">Umgebungsbedingung Temperatur</dcc:content>
+						<dcc:content lang="en">Environmental condition temperature</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:quantity refType="basic_minimum">
+							<dcc:name>
+								<dcc:content lang="de">Temperatur min</dcc:content>
+								<dcc:content lang="en">temperature min</dcc:content>
+							</dcc:name>
+							<si:hybrid>
+								<si:real>
+									<si:value>294.65</si:value>
+									<si:unit>\kelvin</si:unit>
+								</si:real>
+								<si:real>
+									<si:value>21.5</si:value>
+									<si:unit>\degreecelsius</si:unit>
+								</si:real>
+							</si:hybrid>
+						</dcc:quantity>
+						<dcc:quantity refType="basic_maximum">
+							<dcc:name>
+								<dcc:content lang="de">Temperatur max</dcc:content>
+								<dcc:content lang="en">temperature max</dcc:content>
+							</dcc:name>
+							<si:hybrid>
+								<si:real>
+									<si:value>297.65</si:value>
+									<si:unit>\kelvin</si:unit>
+								</si:real>
+								<si:real>
+									<si:value>24.5</si:value>
+									<si:unit>\degreecelsius</si:unit>
+								</si:real>
+							</si:hybrid>
+						</dcc:quantity>
+					</dcc:data>
+				</dcc:influenceCondition>
+				<dcc:influenceCondition refType="basic_humidityRelative">
+					<dcc:name>
+						<dcc:content lang="de">Umgebungsbedingung relative Luftfeuchte</dcc:content>
+						<dcc:content lang="en">Environmental condition relative humidity</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:quantity refType="basic_minimum">
+							<dcc:name>
+								<dcc:content lang="de">Feuchte min</dcc:content>
+								<dcc:content lang="en">humidity min</dcc:content>
+							</dcc:name>
+							<si:hybrid>
+								<si:real>
+									<si:value>0.27</si:value>
+									<si:unit>\one</si:unit>
+								</si:real>
+								<si:real>
+									<si:value>27.0</si:value>
+									
+									<si:unit>\percent</si:unit>
+								</si:real>
+							</si:hybrid>
+						</dcc:quantity>
+						<dcc:quantity refType="basic_maximum">
+							<dcc:name>
+								<dcc:content lang="de">Feuchte max</dcc:content>
+								<dcc:content lang="en">humidity max</dcc:content>
+							</dcc:name>
+							<si:hybrid>
+								<si:real>
+									<si:value>0.47</si:value>
+									<si:unit>\one</si:unit>
+								</si:real>
+								<si:real>
+									<si:value>47.0</si:value>
+									
+									<si:unit>\percent</si:unit>
+								</si:real>
+							</si:hybrid>
+						</dcc:quantity>
+					</dcc:data>
+				</dcc:influenceCondition>
+			</dcc:influenceConditions>
+			<dcc:results>
+				
+				<dcc:result>
+					<dcc:name>
+						<dcc:content lang="de">Ergebnisse der Voruntersuchungen</dcc:content>
+						<dcc:content lang="en">Results of the initial inspections</dcc:content>
+					</dcc:name>
+					<dcc:data>
+						<dcc:quantity refId="inputValue" refType="temperature_inputValue">
+							<dcc:name>
+								<dcc:content lang="de">Eingangswert</dcc:content>
+								<dcc:content lang="en">Input value</dcc:content>
+							</dcc:name>
+							<si:real>
+								<si:value>99.928</si:value>
+								<si:unit>\ohm</si:unit>
+							</si:real>
+							<dcc:measurementMetaData>
+								<dcc:metaData>
+									<dcc:traceable>false</dcc:traceable>
+								</dcc:metaData>
+							</dcc:measurementMetaData>
+						</dcc:quantity>
+						<dcc:quantity refType="temperature_insulationResistance math_minimum">
+							<dcc:name>
+								<dcc:content lang="de">Isolationswiderstand</dcc:content>
+								<dcc:content lang="en">Insulation resistance</dcc:content>
+							</dcc:name>
+							<dcc:description>
+								<dcc:content lang="de">Minimaler Isolationswiderstand bei Raumtemperatur und höchster Kalibriertemperatur</dcc:content>
+								<dcc:content lang="en">Minimum insulation resistance at room temperature and at the hingest calibration temperature</dcc:content>
+							</dcc:description>
+							<si:realListXMLList>
+								<si:valueXMLList>110 110</si:valueXMLList>
+								<si:unitXMLList>\mega\ohm</si:unitXMLList>
+							</si:realListXMLList>
+							<dcc:usedMethods>
+								<dcc:usedMethod>	
+									<dcc:name>
+										<dcc:content lang="de">Bestimmung des Isolationswiderstandes</dcc:content>
+										<dcc:content lang="en">Determination of the insulation resistance</dcc:content>
+									</dcc:name>
+									<dcc:description>
+										<dcc:content lang="de">	Es wird mit einer Spannung von 100 V zwischen jedem Messkreis und der Armatur bei Raumtemperatur und bei der höchsten Kalibriertemperatur überprüft, ob der Isolationswiderstand mehr als 110 Megaohm beträgt.</dcc:content>
+										<dcc:content lang="en"> Applying a voltage of 100 V between each measuring circuit and the fitting, it is tested at room temperature and at the hingest calibration temperature, if the insulation resistance exceeds 110 Megaohms.</dcc:content>
+									</dcc:description>
+									<dcc:norm>EN IEC 60751:2022</dcc:norm>
+									<dcc:reference>6.3.2</dcc:reference>
+									<dcc:reference>6.5.4</dcc:reference>
+								</dcc:usedMethod>
+							</dcc:usedMethods>
+							<dcc:measurementMetaData>
+								<dcc:metaData refId="traceable">
+									<dcc:traceable>false</dcc:traceable>
+								</dcc:metaData>
+								<dcc:metaData>
+									<dcc:declaration>
+										<dcc:content lang="de">Wert ist größer gleich dem angegebenen Wert.</dcc:content>
+										<dcc:content lang="en">Value is greater than or equal to the specified value.</dcc:content>
+									</dcc:declaration>
+									<dcc:validXMLList>true true</dcc:validXMLList>
+								</dcc:metaData>
+							</dcc:measurementMetaData>
+						</dcc:quantity>
+					</dcc:data>
+				</dcc:result>
+				<dcc:result>
+					<dcc:name>
+						<dcc:content lang="de">Ergebnisse der Kalibrierung</dcc:content>
+						<dcc:content lang="en">Results of calibration</dcc:content>
+					</dcc:name>
+					<dcc:description>
+						<dcc:content lang="de">Es sind die Mittelwerte der jeweiligen Kalibriermessung in der Reihenfolge der Kalibrierungen angegeben.</dcc:content>
+						<dcc:content lang="en">The respective means of the measurement values are provided in the order of the calibration sequence.</dcc:content>
+					</dcc:description>
+					<dcc:data>
+						<dcc:list refType="basic_1IndexTable">
+							<dcc:description>
+								<dcc:content lang="de">Temperatur</dcc:content>
+								<dcc:content lang="en">Temperature</dcc:content>
+							</dcc:description>
+							<dcc:dateTimeXMLList>2024-08-19T13:32:24Z 2024-08-21T07:24:48Z 2024-08-21T11:01:00Z 2024-08-23T07:13:11Z 2024-08-23T10:53:12Z</dcc:dateTimeXMLList>
+							<dcc:quantity refType="basic_referenceValue basic_arithmeticMean temperature_ITS-90 basic_TableIndex0">
+								<dcc:name>
+									<dcc:content lang="de">Referenzwertwerte</dcc:content>
+									<dcc:content lang="en">Reference values</dcc:content>
+								</dcc:name>
+								<si:hybrid>
+									<si:realListXMLList>
+										<si:valueXMLList>223.238 233.233 293.266 338.204 373.197</si:valueXMLList>
+										<si:unitXMLList>\kelvin</si:unitXMLList>
+									</si:realListXMLList>
+									<si:realListXMLList>
+										<si:valueXMLList>-49.912 -39.917 20.116 65.054 100.047</si:valueXMLList>
+										<si:unitXMLList>\degreecelsius</si:unitXMLList>
+									</si:realListXMLList>
+								</si:hybrid>
+							</dcc:quantity>
+							<dcc:quantity refType="basic_measuredValue basic_arithmeticMean">
+								<dcc:name>
+									<dcc:content lang="de">Messwert (Widerstand)</dcc:content>
+									<dcc:content lang="en">Measured value (resistance)</dcc:content>
+								</dcc:name>
+								<dcc:description>
+									<dcc:content>HP3458A</dcc:content>
+								</dcc:description>
+								<si:realListXMLList>
+									<si:valueXMLList>80.2005 84.1798 107.7853 125.1439 138.4813</si:valueXMLList>
+									<si:unitXMLList>\ohm</si:unitXMLList>
+								</si:realListXMLList>
+								<dcc:measurementMetaData>
+									<dcc:metaData refId="measuringCurrent">
+										<dcc:data>
+											<dcc:quantity refType="temperature_measuringCurrent">
+												<si:realListXMLList>
+													<si:valueXMLList>0.0007</si:valueXMLList>
+													<si:unitXMLList>\ampere</si:unitXMLList>
+												</si:realListXMLList>
+											</dcc:quantity>
+											<dcc:quantity refType="temperature_measuringCurrentWaveForm">
+												<dcc:noQuantity>
+													<dcc:name>
+														<dcc:content lang="de">Wellenform des Messstroms (DC, rect, sine)</dcc:content>
+														<dcc:content lang="en">Waveform of measuring current (DC, rect, sine)</dcc:content>
+													</dcc:name>
+													<dcc:content>rect</dcc:content>
+												</dcc:noQuantity>
+											</dcc:quantity>
+										</dcc:data>
+									</dcc:metaData>
+									<dcc:metaData refId="numberOfSamples">
+										<dcc:data>
+											<dcc:quantity refType="temperature_numberOfSamples">
+												<si:realListXMLList>
+													<si:valueXMLList>50</si:valueXMLList>
+													<si:unitXMLList>\one</si:unitXMLList>
+												</si:realListXMLList>
+											</dcc:quantity>
+										</dcc:data>
+									</dcc:metaData>
+								</dcc:measurementMetaData>
+							</dcc:quantity>
+							<dcc:quantity refType="temperature_itemTemperatureConverted temperature_ITS-90">
+								<dcc:name>
+									<dcc:content lang="de">Konvertierte Temperaturwerte</dcc:content>
+									<dcc:content lang="en">Converted temperature values</dcc:content>
+								</dcc:name>
+								<si:hybrid>
+									<si:realListXMLList>
+										<si:valueXMLList>222.884 232.920 293.129 338.108 373.086</si:valueXMLList>
+										<si:unitXMLList>\kelvin</si:unitXMLList>
+									</si:realListXMLList>
+									<si:realListXMLList>
+										<si:valueXMLList>-50.266 -40.230 19.979 64.958 99.936</si:valueXMLList>
+										<si:unitXMLList>\degreecelsius</si:unitXMLList>
+									</si:realListXMLList>
+								</si:hybrid>
+							</dcc:quantity>
+							<dcc:quantity refType="basic_measurementError">
+								<dcc:name>
+									<dcc:content lang="de">Abweichung</dcc:content>
+									<dcc:content lang="en">Deviation</dcc:content>
+								</dcc:name>
+								<si:realListXMLList>
+									<si:valueXMLList>-0.354 -0.312 -0.137 -0.095 -0.110</si:valueXMLList>
+									<si:unitXMLList>\kelvin</si:unitXMLList>
+									<si:expandedUncXMLList>
+										
+										<si:uncertaintyXMLList>0.08 0.08 0.08 0.08 0.08</si:uncertaintyXMLList>
+										<si:coverageFactorXMLList>2</si:coverageFactorXMLList>
+										<si:coverageProbabilityXMLList>0.95</si:coverageProbabilityXMLList>
+										<si:distributionXMLList>normal</si:distributionXMLList>
+									</si:expandedUncXMLList>
+								</si:realListXMLList>
+								<dcc:measurementMetaData>
+									<dcc:metaData refId="selfHeating" refType="temperature_selfHeating">
+										<dcc:valid>false</dcc:valid>
+										<dcc:data>
+											<dcc:quantity>
+												<dcc:name>
+													<dcc:content lang="de">Standardunsicherheit der Eigenerwärmung</dcc:content>
+													<dcc:content lang="en">Standard uncertainty of self-heating</dcc:content>
+												</dcc:name>
+												<si:realListXMLList>
+													<si:valueXMLList>NaN</si:valueXMLList>
+													<si:unitXMLList>\kelvin</si:unitXMLList>
+													<si:measurementUncertaintyUnivariateXMLList>
+														<si:standardMUXMLList>
+															<si:valueStandardMUXMLList>0.017</si:valueStandardMUXMLList>
+															<si:distributionXMLList>uniform</si:distributionXMLList>
+														</si:standardMUXMLList>
+													</si:measurementUncertaintyUnivariateXMLList>
+												</si:realListXMLList>
+											</dcc:quantity>
+										</dcc:data>
+									</dcc:metaData>
+									<dcc:metaData refId="hysteresis" refType="temperature_hysteresis">
+										<dcc:validXMLList>false false</dcc:validXMLList>
+										
+										<dcc:data>
+											<dcc:quantity>
+												<dcc:name>
+													<dcc:content lang="de">Standardunsicherheit der Hysterese</dcc:content>
+													<dcc:content lang="en">Standard uncertainty of hysteresis</dcc:content>
+												</dcc:name>
+												<si:realListXMLList>
+													<si:valueXMLList>NaN</si:valueXMLList>
+													<si:unitXMLList>\kelvin</si:unitXMLList>
+													<si:measurementUncertaintyUnivariateXMLList>
+														<si:standardMUXMLList>
+															<si:valueStandardMUXMLList>0.173</si:valueStandardMUXMLList>
+															<si:distributionXMLList>uniform</si:distributionXMLList>
+														</si:standardMUXMLList>
+													</si:measurementUncertaintyUnivariateXMLList>
+												</si:realListXMLList>
+											</dcc:quantity>
+										</dcc:data>
+									</dcc:metaData>
+								</dcc:measurementMetaData>
+							</dcc:quantity>
+							<dcc:measurementMetaData>
+								<dcc:metaData>
+									<dcc:data>
+										<dcc:quantity refId="totalSampleTime" refType="temperature_totalSampleTime">
+											<si:realListXMLList>
+												<si:valueXMLList>300</si:valueXMLList>
+												<si:unitXMLList>\second</si:unitXMLList>
+											</si:realListXMLList>
+										</dcc:quantity>
+									</dcc:data>
+								</dcc:metaData>
+							</dcc:measurementMetaData>
+						</dcc:list>
+					</dcc:data>
+				</dcc:result>
+			</dcc:results>
+		</dcc:measurementResult>
+	</dcc:measurementResults>
+<dsig:Signature xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:ecdsa="http://www.w3.org/2001/04/xmldsig-more#" xmlns:dsig-xpath="http://www.w3.org/2002/06/xmldsig-filter2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Id="XmlDSig-86CA793A734D-1752074367339"><dsig:SignedInfo><dsig:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></dsig:CanonicalizationMethod><dsig:SignatureMethod Algorithm="http://www.w3.org/2007/05/xmldsig-more#sha256-rsa-MGF1"></dsig:SignatureMethod><dsig:Reference URI="" Id="ref-id-2CC74A53AF7B-1752074367339" Type=""><dsig:Transforms><dsig:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></dsig:Transform><dsig:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></dsig:Transform></dsig:Transforms><dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></dsig:DigestMethod><dsig:DigestValue>ZTaqNX9X++41EY1cK2CyzdoqYauciGQGe6bvwKeS5X0=</dsig:DigestValue></dsig:Reference><dsig:Reference URI="#SignedProps-405CC0ED85A6-1752074367339" Id="ref-id-sp-0663876D2393-1752074367341" Type="http://uri.etsi.org/01903#SignedProperties"><dsig:Transforms><dsig:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></dsig:Transform></dsig:Transforms><dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></dsig:DigestMethod><dsig:DigestValue>MG7bzHuMST6pj8bF41Fge4VNEX9B6/vGNY5FQubRhMQ=</dsig:DigestValue></dsig:Reference></dsig:SignedInfo><dsig:SignatureValue>WR6lY8s5NcbWdCtWzDeSJyEBqFNJlKpGp2DBW5IYNHbxItN+2mQ//Zlfw7+4BcV+
+ALWNpp6zVd5YXzQNHy/H8eYk3YYxmct8I23EAGB88GXkD/27IsBZcxG5YxgVaXVs
++LjjfQ5Qdjw2Thr+bnDUgDYjuo+wUAPeTd5js7l2sRokcAS7SgQc6lNmekQ3nNzT
+pqYAHFsNOGwtKf1LQK9e04PCa+IoJT8o1RYM4iRjxIW9mfuHo19ztD4yk0CMp0m2
+rer7GJTVYxlhk5kfiTX4M9aDZkPFAIib9B3yzLEY+/cdaHVROZzwkSsmuZfEKoF0
+EAyQaaTLKdwqt9mqTZtEU5siqZHRhx9LB9ERk1taSfFLoLC0GCoVKaglMSIufZfz
+dVTDtuo4b1Crta4b1g8OLZPmhbvr3tvdVCbBQHExIKrW2KYV4aTmoguVLKvCU0+Z
++t4f+YbgURyVGWKdUimLR5u8UoSm/3lYNQzQRXCwWXpXmjdc33OPV6NQoiTnKZhT
+ZRYdwKH8HZN3INYaim8h0CvvQkXodplC6hnBddWOCYqsSGZV1RjiT4QIjZ6HcLUs
+qeRbKLePgNjlb8cHiJ1RBuKmS2vVS3NyQErvAfUwq1sp6PkRuCynWMyEnft4m2YX
+UNzp8r8VnBfNG+6iMKHXM5IV75yYC7RO8gCm7xwFitY=
+</dsig:SignatureValue><dsig:KeyInfo><dsig:X509Data><dsig:X509Certificate>MIIMNDCCCeygAwIBAgIQYEHkdqOHEohj54AlVz8+cTA9BgkqhkiG9w0BAQowMKAN
+MAsGCWCGSAFlAwQCA6EaMBgGCSqGSIb3DQEBCDALBglghkgBZQMEAgOiAwIBQDBe
+MQswCQYDVQQGEwJERTEVMBMGA1UEChMMRC1UcnVzdCBHbWJIMR8wHQYDVQQDExZE
+LVRSVVNUIENBIDUtMjItMiAyMDIyMRcwFQYDVQRhEw5OVFJERS1IUkI3NDM0NjAe
+Fw0yNTAyMTIxNjMyNTFaFw0yNzAyMTYxNjMyNTFaMIHXMQswCQYDVQQGEwJERTE7
+MDkGA1UECgwyQnVuZGVzYW5zdGFsdCBmw7xyIE1hdGVyaWFsZm9yc2NodW5nIHVu
+ZCAtcHLDvGZ1bmcxOzA5BgNVBAMMMkJ1bmRlc2Fuc3RhbHQgZsO8ciBNYXRlcmlh
+bGZvcnNjaHVuZyB1bmQgLXByw7xmdW5nMQ8wDQYDVQQHEwZCZXJsaW4xGTAXBgNV
+BGETEERUOkRFLTMwMDQwODU5MTUxIjAgBgNVBAUTGURBa2tTMDAtREUtSzAtMTEw
+NzUtMDgtMDAwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQC9/4fY4uzf
+u9v8Zx2rXzwt8VNPXc5e+8Fb9wDcyFHxVxawUI331ZvXzAA8ElACQHS4PZMptByN
+1Yv6+AfMxEipLDk26m/HK82uDqUPTuKvAE95rR5hRnqBWDQ8MAsaAYjPNsr2117l
+Lwq0GHaGjcmntIhjeqAwFSXGSXELViIT5DIUt//CNK4ZlkbAo0GIhs1JGkk1SHdQ
+xBXwxtd/EdczI104cJRGQVZZjn2G4/0fZKOep6jN/Vo6McHYUafOisk2L85o6xvV
+GOVe/idqeGNrXNLQvy/9bdDTahNQUbAcUh/2Fbr2eP4hQixcJO9WzOvq+Z62wJYQ
+jrvnZ9QrGWRj5RK/bEOhnTbtSwJ07iACJsO6WG2tqDJRNydeukpxRInvogRZYXy8
++XUCaubbaaNS+Y9tymNRKjVME01naPMqHfAg58xdn0eNkjruHcL14vTeblZ//bi/
+nO1ve+LVHTRAyKI9XveryIAa9/QFT08f3BLS7LlJZfF5SDHP6f1QOfyyQViu5g1o
+SbBe4SbWap9U2HW18Odht9Am0P7+CMX1DEUjpgWL0FEJ2bI4hut+rR6/SzAP89ol
+jQD19Nxw+qvwAToQN2S504lVxOR/emLzIa87CxpwLOtO1nrqpr8RHGq9Fj3QE0YZ
+ZyTqTaVCUecAyhTNwaJP+xq/IjyXwQ54eQIDAQABo4IGEjCCBg4wHwYDVR0jBBgw
+FoAUondmezB6EvjkzoluVEB/GfdMLnYwgb8GCCsGAQUFBwEDBIGyMIGvMAgGBgQA
+jkYBATCBjQYGBACORgEFMIGCMD8WOWh0dHBzOi8vd3d3LmQtdHJ1c3QubmV0L2lu
+dGVybmV0L2ZpbGVzL0QtVFJVU1RfUEtJX0RTLnBkZhMCZGUwPxY5aHR0cHM6Ly93
+d3cuZC10cnVzdC5uZXQvaW50ZXJuZXQvZmlsZXMvRC1UUlVTVF9QS0lfRFMucGRm
+EwJlbjATBgYEAI5GAQYwCQYHBACORgEGAjCBpgYFKyQIAwMEgZwwgZmICCsGAQQB
+g9JlMIGMMIGJoEekRTBDMTQwMgYDVQQKEytEZXV0c2NoZSBBa2tyZWRpdGllcnVu
+Z3NzdGVsbGUgR21iSCAoREFra1MpMQswCQYDVQQGEwJERTA+MDwwLQwrREFra1Mg
+YWNjcmVkaXRlZCBjb25mb3JtaXR5IGFzc2Vzc21lbnQgYm9keTALBgkrBgEEAYPS
+ZQEwgZMGCCsGAQUFBwEBBIGGMIGDMDoGCCsGAQUFBzABhi5odHRwOi8vZC10cnVz
+dC1jYS01LTIyLTItMjAyMi5vY3NwLmQtdHJ1c3QubmV0MEUGCCsGAQUFBzAChjlo
+dHRwOi8vd3d3LmQtdHJ1c3QubmV0L2NnaS1iaW4vRC1UUlVTVF9DQV81LTIyLTJf
+MjAyMi5jcnQwggFIBgNVHSAEggE/MIIBOzAJBgcEAIvsQAEBMFoGCysGAQQBpTQC
+gRYFMEswSQYIKwYBBQUHAgEWPWh0dHA6Ly93d3cuZC10cnVzdC5uZXQvaW50ZXJu
+ZXQvZmlsZXMvRC1UUlVTVF9DU01fUEtJX0NQUy5wZGYwgdEGCisGAQQBg9JlAgEw
+gcIwRgYIKwYBBQUHAgEWOmh0dHBzOi8vYWNjcmVkaXRhdGlvbmF1dGhvcml0eS5k
+YWtrcy5kZS9wa2kvZGFra3MtdHNwcy5wZGYweAYIKwYBBQUHAgIwbAxqSG9oZWl0
+c3plaWNoZW4gKE9JRDogMS4zLjYuMS40LjEuNTk3NDkuMy4xKTogaHR0cHM6Ly9h
+Y2NyZWRpdGF0aW9uYXV0aG9yaXR5LmRha2tzLmRlL2F1dGhvcml0aWVzZW1ibGVt
+LnBkZjCBhgYDVR0fBH8wfTB7oHmgd4Y1aHR0cDovL2NybC5kLXRydXN0Lm5ldC9j
+cmwvZC10cnVzdF9jYV81LTIyLTJfMjAyMi5jcmyGPmh0dHA6Ly9jZG4uZC10cnVz
+dC1jbG91ZGNybC5uZXQvY3JsL2QtdHJ1c3RfY2FfNS0yMi0yXzIwMjIuY3JsMB0G
+A1UdDgQWBBSDKV5oyYZmI8Mvuk2o/Hf8Lfn+uzAOBgNVHQ8BAf8EBAMCBsAwdQYF
+KyQIAwgEbAxqVGhlIGFwcGxpY2F0aW9uIG9mIHRoZSBzZWFsaW5nIGtleSBpcyBs
+aW1pdGVkIHRvIHRoZSBzZWFsaW5nIG9mIHRoZSBhdHRlc3RhdGlvbiAoc3RhdGVt
+ZW50IG9mIGNvbmZvcm1pdHkpLjCCAW0GBSskCAMPBIIBYgyCAV5BdHRlc3RhdGlv
+biBieSBhIGNvbmZvcm1pdHkgYXNzZXNzbWVudCBib2R5IChDQUIpIGFzIGRlZmlu
+ZWQgaW4gY2xhdXNlIDcuMyBvZiBJU08vSUVDIDE3MDAwIHRoYXQgdGhlIG9iamVj
+dCBvZiBhIGNvbmZvcm1pdHkgYXNzZXNzbWVudCBhcyBkZWZpbmVkIGluIGNsYXVz
+ZSA0LjIgb2YgSVNPL0lFQyAxNzAwMCBtZWV0cyBjZXJ0YWluIHNwZWNpZmllZCBv
+ciBleHBlY3RlZCByZXF1aXJlbWVudHMgYXMgZGVmaW5lZCBpbiBjbGF1c2UgNS4x
+IG9mIElTTy9JRUMgMTcwMDAsIGluIHBhcnRpY3VsYXIgdGhlIGRpZ2l0YWwgc2Vh
+bGluZyBvZiByZXN1bHQgcmVwb3J0cyAoInN0YXRlbWVudHMgb2YgY29uZm9ybWl0
+eSIpLjA9BgkqhkiG9w0BAQowMKANMAsGCWCGSAFlAwQCA6EaMBgGCSqGSIb3DQEB
+CDALBglghkgBZQMEAgOiAwIBQAOCAgEAUSvMi6RX1Xhh3p39KWO35Puoli2DcjLl
+XeiD02lk1VC372ZoLYBkHecdwKytTq1JYAskrjh+qRvDL7XEDsTI81CCxMVaiKit
+G6ArxChciUX0u9S0pWCtWmP1ADXnsWHjB1ndJfqZygRjztHjIPjFYUrVYjne43G9
+ahqqcEK/WU5yQaINp91oNcK++ptFASE8U4jq8QHJIh8B/23cCq7k4WAuszS5jD9k
+CY98EU1LTUqhu5xgbT/OR+anHL0zcT4SHJhScH3RvovoztGUFParSDa8wdQ3Rovu
+2S9J8EnEF+wxQAix4BQPjRKaf2QOwGs2fgLocZwfFl5feLFNzgDds7CU57KuiyJh
++ubZjjOjVqA++tV3Tc2yw/oqJnoj19eeWzY/O0IOZOjfAu3mNMmOslmOLx61rlae
+IB9UoPGzFGXSiQ59rrpPe7cWT6o33nRAzlieXVNU+XWsqpuwmxb6NzKYytpsyeX3
+aOl55gypw6Wdt+moxYcYPI+kNfnoi/PE4qfJdzg+sU3nePbNRkBDAmaVOR4+vCla
+K9tEa+krAMqShoFQblM7BaN0t8TlfgG07H+ZWnrurvMKVuUGpV2iTauDJIsTfPUt
+F6g15MpX86eIXJ7AQiEVPi1gssSR/FS/OYBESzvpFiTtFmxFfCnMmRQmSJOMpUDW
+Ofockjq2Zbw=
+</dsig:X509Certificate></dsig:X509Data></dsig:KeyInfo><dsig:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:ecdsa="http://www.w3.org/2001/04/xmldsig-more#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Target="#XmlDSig-86CA793A734D-1752074367339"><xades:SignedProperties Id="SignedProps-405CC0ED85A6-1752074367339"><xades:SignedSignatureProperties><xades:SigningTime>2025-07-09T15:19:26Z</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><dsig:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></dsig:DigestMethod><dsig:DigestValue>c53tebLO3LB0ix0HwcH6LsmZmAHQzL5F1F4EY4bLT40=</dsig:DigestValue></xades:CertDigest><xades:IssuerSerial><dsig:X509IssuerName>2.5.4.97=NTRDE-HRB74346,CN=D-TRUST CA 5-22-2 2022,O=D-Trust GmbH,C=DE</dsig:X509IssuerName><dsig:X509SerialNumber>127948020680078845963748426305870184049</dsig:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#ref-id-2CC74A53AF7B-1752074367339"><xades:MimeType>text/xml</xades:MimeType></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties><xades:UnsignedProperties><xades:UnsignedSignatureProperties><xades:SignatureTimeStamp><xades:EncapsulatedTimeStamp>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</xades:EncapsulatedTimeStamp><dsig:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></dsig:CanonicalizationMethod></xades:SignatureTimeStamp></xades:UnsignedSignatureProperties></xades:UnsignedProperties></xades:QualifyingProperties></dsig:Object></dsig:Signature></dcc:digitalCalibrationCertificate>
