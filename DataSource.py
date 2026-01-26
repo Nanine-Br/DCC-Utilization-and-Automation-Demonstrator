@@ -3,7 +3,13 @@ import time
 import threading
 import pandas as pd
 from tkinter import messagebox
+
+import sys
+print(sys.executable)
+import serial
 import serial.tools.list_ports
+
+print(f"Serial-Modul: {serial.__file__}")
 
 ### Own modules
 from Instance_Manager import IM
@@ -142,7 +148,7 @@ class DataSource:
                     except Exception as e:
                         print(f"Error while publishing the data {self.data} read from the port: {e} with type: {type(e)}")
                         self.logger.warning(f"Error while publishing the data {self.data} read from the port: {e} with type: {type(e)}")
-                    break
+                        break
                 time.sleep(0.05)
             self.ser.close()   
 
