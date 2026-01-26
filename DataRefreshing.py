@@ -61,7 +61,7 @@ class LivePlotApp:
             self.ax.set_title(title)
             self.ax.title.set_fontsize(16)
             self.ax.set_xlabel('Timestamp')
-            self.ax.set_ylabel('Temperature (°C)')
+            self.ax.set_ylabel('Temperature /°C')
             self.ax.legend(loc='upper right', bbox_to_anchor=(1.5, 0.9))
             self.ax.set_position([0.1, 0.15, 0.6, 0.7])
             self.ax.grid(True, which='both')
