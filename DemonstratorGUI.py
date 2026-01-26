@@ -226,9 +226,16 @@ class DCCDemonstratorGUI:
                     self.EB.publish("DCC_toggle_switch_changed", {"ID": switch.id, "value": switch.toggle_var.get()})
                     
             if hasattr(self, 'ausgabe'):
+                print("Das Ausgabe-Frame wird gelöscht.")
                 self.ausgabe.destroy()
             if hasattr(self, 'treeview'):
+                print(self.treeview.winfo_exists())
+                print("Das Treeview-Widget wird gelöscht.")
+                self.treeview.grid_forget()
+                self.treeview_frame.grid_forget()
                 self.treeview.destroy()
+                self.treeview_frame.destroy()
+                print(self.treeview.winfo_exists())
             for led in self.DCC_validation_LEDs:
                 led.update_color("black")
       
@@ -271,6 +278,9 @@ class DCCDemonstratorGUI:
             self.labels.append(label)
             label.grid(row=4+i, column=1, padx=2, sticky=tkboot.W)
 
+        # self.treeview_frame = tkboot.Frame(self.tab)
+        # self.treeview = tkboot.Treeview(self.treeview_frame, selectmode="none")
+
 
 
         # ------------ Results of the validation ------------
@@ -294,6 +304,7 @@ class DCCDemonstratorGUI:
         b = round(float(data["b"]), 4)
         self.ausgabe = tkboot.Frame(self.tabs[1])
         self.ausgabe.grid(row=10, column=0, padx=5, pady=2)
+        # Delete previous output, if any
         if hasattr(self, 'ausgabe_a'):
             self.ausgabe_a.destroy()
         self.ausgabe_a = tkboot.Label(self.ausgabe, text=f"a: {a}", font=(text_widget_font, text_widget_font_size))
@@ -304,8 +315,13 @@ class DCCDemonstratorGUI:
         self.ausgabe_b = tkboot.Label(self.ausgabe, text=f"b: {b}", font=(text_widget_font, text_widget_font_size))
         self.ausgabe_b.grid(row=0, column=1, padx=5, pady=2)
 
-        self.treeview = tkboot.Treeview(self.tabs[1], selectmode="none")
-        self.treeview.grid(row=11, column=0, padx=5, pady=2)
+        if hasattr(self, 'treeview'):
+            self.treeview.destroy()
+            self.treeview_frame.destroy()
+        self.treeview_frame = tkboot.Frame(self.tabs[1])
+        self.treeview_frame.grid(row=11, column=0, padx=5, pady=2)
+        self.treeview = tkboot.Treeview(self.treeview_frame, selectmode="none")
+        self.treeview.grid(row=0, column=0, padx=5, pady=2)
 
         self.treeview["columns"] = list(DCC_data_df.columns)
         self.treeview["show"] = "headings"
@@ -318,7 +334,7 @@ class DCCDemonstratorGUI:
         # Adds column headers
         for col in DCC_data_df.columns:
             self.treeview.heading(col, text=col, anchor="center")
-            self.treeview.column(col, width=140, minwidth=140, anchor="center", stretch=tk.NO)
+            self.treeview.column(col, width=160, minwidth=140, anchor="center", stretch=tk.NO)
 
         # Adds data rows
         for row in DCC_data_df.itertuples(index=False):
@@ -492,12 +508,12 @@ class DCCDemonstratorGUI:
         self.middle_frame.rowconfigure(0, weight=1)
         self.middle_frame.columnconfigure([0, 1, 2], weight=1)
         # Display of the measured temperature value        
-        self.mesTemp = OutputFieldWidget(self.middle_frame, "Measured Temperature [°C]:")
+        self.mesTemp = OutputFieldWidget(self.middle_frame, "Measured Temperature /°C:")
         self.mesTemp.grid(row=0, column=0, padx=2, pady=2, sticky=tkboot.NSEW)
         self.custom_widgets.append(self.mesTemp)
         self.output_measured_temps.append(self.mesTemp)
         # Display of the specification 
-        self.show_specification = OutputFieldWidget(self.middle_frame, "Specification [K]:")
+        self.show_specification = OutputFieldWidget(self.middle_frame, "Specification /K:")
         self.show_specification.grid(row=0, column=1, padx=2, pady=2, sticky=tkboot.NSEW)
         self.custom_widgets.append(self.show_specification)
         self.output_specifications.append(self.show_specification)
@@ -515,7 +531,7 @@ class DCCDemonstratorGUI:
         self.plot_rawData.config(width=canvas_size[0], height=canvas_size[1])
         self.plot_rawData.grid(row=0, column=0)
         # Bandwidth output
-        self.band_width = OutputFieldWidget(self.left_plot_frame, "Acceptance Band Width [K]:")
+        self.band_width = OutputFieldWidget(self.left_plot_frame, "Acceptance Band Width /K:")
         self.band_width.grid(row=0, column=0, padx=5, pady=5, sticky=tkboot.E)
         self.custom_widgets.append(self.band_width)
         self.band_width_list.append(self.band_width)
@@ -551,11 +567,11 @@ class DCCDemonstratorGUI:
         self.corr_middle_frame.columnconfigure([0, 1, 3], weight=1)
 
         # Display field for the corrected temperature
-        self.show_corrected_temp = OutputFieldWidget(self.corr_middle_frame, "Corrected Temperature [°C]:")
+        self.show_corrected_temp = OutputFieldWidget(self.corr_middle_frame, "Corrected Temperature /°C:")
         self.custom_widgets.append(self.show_corrected_temp)
         self.corrected_temps.append(self.show_corrected_temp)
         # Display field for uncertainty
-        self.show_uncertainty = OutputFieldWidget(self.corr_middle_frame, "Uncertainty [K]:")
+        self.show_uncertainty = OutputFieldWidget(self.corr_middle_frame, "Uncertainty /K:")
         self.custom_widgets.append(self.show_uncertainty)
         self.uncertainties.append(self.show_uncertainty)
         # LED display for the corrected data
@@ -572,7 +588,7 @@ class DCCDemonstratorGUI:
         self.placeholder_list.append(self.placeholder)
         self.logger.info(f"Der Platzhalter wurde erfolgreich erstellt: {self.placeholder}")
         # Output bandwidth
-        self.band_width_DCC = OutputFieldWidget(self.right_plot_frame, "Acceptance Band Width [K]:")
+        self.band_width_DCC = OutputFieldWidget(self.right_plot_frame, "Acceptance Band Width /K:")
         self.custom_widgets.append(self.band_width_DCC)
         self.band_width_list_DCC.append(self.band_width_DCC)
     
