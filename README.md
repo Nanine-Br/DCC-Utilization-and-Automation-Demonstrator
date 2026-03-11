@@ -34,11 +34,12 @@ Users needing to analyze temperature sensor measurements with automated correcti
 
 
 ⚙️ **Installation**
+> **Note:** OpenSSL must be installed on your system to enable full DCC validation (certificate and integrity checks). On Windows, you can install it from [Shining Light Productions](https://slproweb.com/products/Win32OpenSSL.html). Linux and macOS usually have OpenSSL pre-installed.
 1. Install Python 3.12.
-2. Install required dependencies:
+3. Install required dependencies:
    ```bash
    pip install -r requirements.txt
-3. Clone this repository:
+4. Clone this repository:
    ```bash
    git clone https://github.com/Nanine-Br/DCC-Utilization-and-Automation-Demonstrator.git
 5. Run the main script:
