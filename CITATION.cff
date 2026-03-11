@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "DCC Utilization and Automation Demonstrator"
+message: "If you use this software, please cite it as below."
+type: software
+
+authors:
+  - family-names: Brunner
+    given-names: Nanine
+
+repository-code: "https://github.com/Nanine-Br/DCC-Utilization-and-Automation-Demonstrator"
+
+version: 1.0.0
+date-released: 2026
