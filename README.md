@@ -49,3 +49,8 @@ Users needing to analyze temperature sensor measurements with automated correcti
 📄 **License**
 
 This project is licensed under the MIT License
+
+**DOI**
+
+<img width="191" height="20" alt="image" src="https://github.com/user-attachments/assets/f0f741c3-eb4a-44f0-87bb-3a7226d0d4a1" />
+
